@@ -50,7 +50,7 @@ class Bot {
       // 检查是否为冷却命令
       if (this.isCooldownCommand(text)) {
         this.replyWithCooldown(message.group_id, "冷却时间内");
-      } else if (text === '/帮助' || text === '?帮助') {
+      } else if (text === '/菜单' || text === '?菜单') {
         // 回复菜单文本
         this.delayedReply(message.group_id, this.config.menuText);
       } else if (text === '/帮助' || text === '?帮助') {
